@@ -7,7 +7,7 @@ bot.on("ready", function() {
 });
 
 bot.on("message", async (message) => {
-	if (message.content.startsWith('halo')) {
+	if (message.content.startsWith("halo")) {
 		message.channel.send("halo juga");
 	}
 });
