@@ -6,4 +6,4 @@ bot.on("ready", function() {
     console.log(`${bot.user.username} sudah siap!`);
 });
 
-bot.login("process.env.token");
+bot.login("process.env.TOKEN");
