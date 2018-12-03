@@ -6,10 +6,4 @@ bot.on("ready", function() {
     console.log(`${bot.user.username} sudah siap!`);
 });
 
-bot.on("message", async (message) => {
-	if (message.content.startsWith("halo")) {
-		message.channel.send("halo juga");
-	}
-});
-
-bot.login(process.env.TOKEN);
+bot.login("process.env.token");
