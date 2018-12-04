@@ -8,7 +8,7 @@ bot.on("ready", function() {
 
 bot.on('guildMemberAdd', async (member) => {
 	const joinchannel = member.guild.channels.find('name', 'welcomer-goodbye');
-    joinchannel.send(`Welcome to the jungle 👋😹 ${member.user.tag}`);
+    joinchannel.send(`Welcome to the jungle 👋😹 ${member.user}`);
 
 });
 
