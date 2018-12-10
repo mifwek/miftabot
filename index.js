@@ -51,12 +51,6 @@ bot.on("ready", function() {
     console.log(`${bot.user.username} sudah siap!`);
 });
 
-bot.on('guildMemberAdd', async (member) => {
-	const joinchannel = member.guild.channels.find('name', 'welcomer-goodbye');
-    joinchannel.send(`Welcome to the jungle 👋😹 ${member.user.tag}`);
-
-});
-
 bot.on("message", async message => {
 	if (message.author.bot) return;
 	if (message.channel.type === 'dm') return
