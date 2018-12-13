@@ -40,11 +40,11 @@ function changeColor() {
   }
 }
 
-if (cmd === `${prefix}rainbowrole`) {
+bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.username}!`);
   if(config.speed < 2000){console.log("The minimum speed is 2000"); process.exit(1);}
   setInterval(changeColor, config.speed);
-};
+});
 
 bot.on("ready", function() {
     bot.user.setGame(`noHELP!`);
