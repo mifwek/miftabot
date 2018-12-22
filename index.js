@@ -47,7 +47,7 @@ bot.on('ready', () => {
 });
 
 bot.on("ready", function() {
-    bot.user.setGame(`noHELP!`);
+    bot.user.setGame(`bersama 爪ꀤ千匕丹`);
     console.log(`${bot.user.username} sudah siap!`);
 });
 
