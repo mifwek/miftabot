@@ -51,6 +51,11 @@ bot.on("ready", function() {
     console.log(`${bot.user.username} sudah siap!`);
 });
 
+bot.on("guildMemberAdd", function(member) {
+    let role = member.guild.roles.find("name", "USER");
+    member.addRole(role).catch(console.error);
+});
+
 bot.on("message", async message => {
 	if (message.author.bot) return;
 	if (message.channel.type === 'dm') return
