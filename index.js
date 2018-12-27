@@ -47,7 +47,7 @@ bot.on('ready', () => {
 });
 
 bot.on("ready", function() {
-    bot.user.setGame(`RAINBOWrole`);
+    bot.user.setGame(`RAINBOW | /invite`);
     console.log(`${bot.user.username} sudah siap!`);
 });
 
