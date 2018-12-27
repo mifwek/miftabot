@@ -47,7 +47,7 @@ bot.on('ready', () => {
 });
 
 bot.on("ready", function() {
-    bot.user.setGame(`〔ɪɴᴄ〕爪ꀤ千匕丹`);
+    bot.user.setGame(`RAINBOWrole`);
     console.log(`${bot.user.username} sudah siap!`);
 });
 
