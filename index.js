@@ -71,17 +71,17 @@ if (cmd === `${prefix}say`) {
     if(!say) return message.reply("masukan sebuah kata atau kalimat");
           message.delete().catch(O_o=>{}); 
           message.channel.send(say);
-    },
+    }
 if (cmd === `${prefix}invite`) {
-    let invite = new Discord.RichEmbed()
-            .setTitle("***pelangi V_1.0***")
-            .setThumbnail(results[0].thumbnails.high.url)
-            .addField("Invite Link", "https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot")
-            .setDescription("Pemasangan Lebih Lanjut Hubungi, @〔ɪɴᴄ〕爪ꀤ千匕丹 \n Terima Kasih!")
-            .setColor(RANDOM)
-            .setTimestamp()
-   message.channel.send(invite);
-},
+        var embedhelpmember = new Discord.RichEmbed()
+            .setTitle("pelangi V_1.0 bot")
+            .addField("Invite pelangi V_1.0 bot ke server kamu", "Untuk invite pelangi V_1.0 bot klik link dibawah.!")
+            .addField("Link", "https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot")
+            .setColor(0x00FFEE)
+            .setFooter("Pemasangan lebih lanjut hubungi @〔ɪɴᴄ〕爪ꀤ千匕丹");
+            message.delete()
+            message.channel.send(embedhelpmember)
+    };
 });
 
 bot.login(process.env.TOKEN);
