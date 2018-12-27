@@ -80,7 +80,7 @@ if (cmd === `${prefix}invite`) {
             .setDescription("https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot \n Pemasangan Lebih Lanjut Hubungi \n @〔ɪɴᴄ〕爪ꀤ千匕丹 \n Terima kasih") 
             .setColor(RANDOM)
             .setTimestamp()
-            message.channel.send(embedInvite)
+            message.channel.send(embedInvite);
      },
 });
 
