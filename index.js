@@ -67,6 +67,16 @@ if (cmd === `${prefix}say`) {
           message.delete().catch(O_o=>{}); 
           message.channel.send(say);
     }
+if (cmd === `${prefix}botinfo`) {
+   let bicon = bot.user.displayAvatarURL;
+   let botembed = new Discord.RichEmbed()
+    .setTitle("Informasi Bot")
+    .setColor("0x00FFEE")
+    .setThumbnail(bicon)
+    .addField("Nama Bot", bot.user.username)
+    .addField("Lanjutan", "Kegunaan bot ini ialah \n agar role server yang kita inginkan \n otomatis bisa gonta ganti warna sendiri.");
+    message.channel.send(botembed);
+}
 if (cmd === `${prefix}invite`) {
         var embedhelpmember = new Discord.RichEmbed()
             .setTitle("pelangi V_1.0 bot")
