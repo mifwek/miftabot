@@ -71,7 +71,17 @@ if (cmd === `${prefix}say`) {
     if(!say) return message.reply("masukan sebuah kata atau kalimat");
           message.delete().catch(O_o=>{}); 
           message.channel.send(say);
-    }
+    },
+if (cmd === `${prefix}invite`) {
+	var embedhelpmember = new Discord.RichEmbed()
+            .setAuthor("***pelangi V_1.0***")
+            .setTitle("Invite Link")
+            .setThumbnail(results[0].thumbnails.high.url)
+            .setDescription("https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot \n Pemasangan Lebih Lanjut Hubungi \n @〔ɪɴᴄ〕爪ꀤ千匕丹 \n Terima kasih") 
+            .setColor(RANDOM)
+            .setTimestamp()
+            message.channel.send(embedhelpmember)
+     },
 });
 
 bot.login(process.env.TOKEN);
