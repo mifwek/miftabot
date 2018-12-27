@@ -73,15 +73,15 @@ if (cmd === `${prefix}say`) {
           message.channel.send(say);
     },
 if (cmd === `${prefix}invite`) {
-	let embedInvite = new Discord.RichEmbed()
-            .setAuthor("***pelangi V_1.0***")
-            .setTitle("Invite Link")
+    let invite = new Discord.RichEmbed()
+            .setTitle("***pelangi V_1.0***")
             .setThumbnail(results[0].thumbnails.high.url)
-            .setDescription("https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot \n Pemasangan Lebih Lanjut Hubungi \n @〔ɪɴᴄ〕爪ꀤ千匕丹 \n Terima kasih") 
+            .addField("Invite Link", "https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot")
+            .setDescription("Pemasangan Lebih Lanjut Hubungi, @〔ɪɴᴄ〕爪ꀤ千匕丹 \n Terima Kasih!")
             .setColor(RANDOM)
             .setTimestamp()
-            message.channel.send(embedInvite);
-     },
+   message.channel.send(invite);
+},
 });
 
 bot.login(process.env.TOKEN);
