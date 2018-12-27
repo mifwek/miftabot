@@ -74,7 +74,7 @@ if (cmd === `${prefix}botinfo`) {
     .setColor("0x00FFEE")
     .setThumbnail(bicon)
     .addField("Nama Bot", bot.user.username)
-    .addField("Lanjutan", "Kegunaan bot ini ialah \n agar role server yang kita inginkan \n otomatis bisa gonta ganti warna sendiri.");
+    .addField("Lanjutan", "Kegunaan bot ini ialah agar role server yang kita inginkan otomatis bisa gonta ganti warna sendiri.");
     message.channel.send(botembed);
 }
 if (cmd === `${prefix}invite`) {
