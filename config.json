@@ -1,11 +1,8 @@
 {
 	"prefix": "/",
-	"servers": [
-		"514572222858526740",
-		"527970462987190292"
-	],
+	"servers": ["514572222858526740"],
 	"roleName": "RAINBOW",
-	"colors": 20,
+	"colors": 10,
 	"speed": 2000,
 	"logging": true
 }
