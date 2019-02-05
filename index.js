@@ -84,7 +84,7 @@ if (cmd === `${prefix}invite`) {
             .addField("Link", "https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot")
 	    .addField("Support", "https://discord.gg/xRgcNn2")
             .setColor(0x00FFEE)
-            .setFooter("Pemasangan lebih lanjut hubungi @〔ɪɴᴄ〕爪ꀤ千匕丹");
+            .setFooter("Pemasangan lebih lanjut hubungi @Mipp");
             message.channel.send(embedhelpmember)
     };
 });
