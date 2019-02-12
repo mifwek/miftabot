@@ -82,7 +82,6 @@ if (cmd === `${prefix}invite`) {
             .setTitle("pelangi V_1.0 bot")
             .addField("Invite pelangi V_1.0 bot ke server kamu", "Untuk invite pelangi V_1.0 bot klik link dibawah.!")
             .addField("Link", "https://discordapp.com/api/oauth2/authorize?client_id=477323524973920266&permissions=8&scope=bot")
-	    .addField("Support", "https://discord.gg/xRgcNn2")
             .setColor(0x00FFEE)
             .setFooter("Pemasangan lebih lanjut hubungi @Mipp");
             message.channel.send(embedhelpmember)
