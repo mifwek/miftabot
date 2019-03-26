@@ -42,7 +42,7 @@ function changeColor() {
 
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.username}!`);
-  if(config.speed < 1000){console.log("The minimum speed is 1000"); process.exit(1);}
+  if(config.speed < 2000){console.log("The minimum speed is 2000"); process.exit(1);}
   setInterval(changeColor, config.speed);
 });
 
